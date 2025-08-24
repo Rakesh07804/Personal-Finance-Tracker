@@ -1,0 +1,269 @@
+/* src/css/Login.css */
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;700&display=swap');
+
+/* Apply font to everything */
+body, html, .login-page, .login-background, .login-container {
+  font-family: 'Edu NSW ACT Foundation', cursive, "Segoe UI", Arial, sans-serif;
+}
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f8f9fa; /* light neutral background */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-background {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Pastel gradient background */
+  background: linear-gradient(135deg, #f8fafc 0%, #e0c3fc 100%);
+}
+
+.login-container {
+  background: #fff8f0;
+  padding: 40px 32px;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(160, 160, 160, 0.12);
+  width: 370px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #f3e8ff;
+}
+
+.login-heading {
+  font-style: italic;
+  font-size: 2.2rem;
+  margin-bottom: 28px;
+  font-family: 'Edu NSW ACT Foundation', cursive, "Segoe UI", Arial, sans-serif;
+  color: #a084ca;
+  letter-spacing: 1px;
+}
+
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-label {
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+  color: #7b7b7b;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.login-input {
+  padding: 11px;
+  margin-bottom: 18px;
+  border: 1px solid #e0c3fc;
+  border-radius: 6px;
+  background: #f3e8ff;
+  font-size: 1rem;
+  transition: border 0.2s;
+}
+
+.login-input:focus {
+  border-color: #a084ca;
+  outline: none;
+  background: #f8fafc;
+}
+
+.login-btn {
+  background: linear-gradient(90deg, #a084ca 0%, #f3e8ff 100%);
+  color: #fff;
+  border: none;
+  padding: 12px 0;
+  border-radius: 6px;
+  font-size: 1.08rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 14px;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(160, 132, 202, 0.08);
+}
+
+.login-btn:hover {
+  background: linear-gradient(90deg, #f3e8ff 0%, #a084ca 100%);
+  color: #a084ca;
+}
+
+.error {
+  color: #ed4956;
+  margin-bottom: 10px;
+  font-size: 0.98rem;
+  background: #ffeaea;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.success {
+  color: #27ae60;
+  margin-bottom: 10px;
+  font-size: 0.98rem;
+  background: #eaffea;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.register-link {
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.05rem;
+  color: #7b7b7b;
+}
+
+.register-btn {
+  background: none;
+  border: none;
+  color: #a084ca;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.05rem;
+  text-decoration: underline;
+  padding: 0;
+  transition: color 0.2s;
+}
+
+.register-btn:hover {
+  color: #ed4956;
+}
+
+.side-nav {
+  min-height: 100vh;
+  width: 200px;
+  background: linear-gradient(135deg, #f3e8ff 0%, #a084ca 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px 0 0 0;
+  box-shadow: 2px 0 12px rgba(160, 132, 202, 0.08);
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.side-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.side-nav li {
+  padding: 16px 32px;
+  width: 100%;
+  color: #6c4ab6;
+  font-size: 1.08rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  border-radius: 0 24px 24px 0;
+  margin-bottom: 8px;
+  box-sizing: border-box;
+}
+
+.side-nav li:hover {
+  background: #fff8f0;
+  color: #ed4956;
+}
+
+.personal-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f8fafc 0%, #e0c3fc 100%);
+  margin-left: 200px; /* space for sidebar */
+}
+
+.personal-card {
+  background: #fff8f0;
+  padding: 40px 32px;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(160, 160, 160, 0.12);
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #f3e8ff;
+}
+
+.welcome-msg {
+  font-size: 1.5rem;
+  color: #a084ca;
+  margin-bottom: 24px;
+  font-family: 'Edu NSW ACT Foundation', cursive, "Segoe UI", Arial, sans-serif;
+  text-align: center;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+  color: #7b7b7b;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.form-group input {
+  padding: 11px;
+  border: 1px solid #e0c3fc;
+  border-radius: 6px;
+  background: #f3e8ff;
+  font-size: 1rem;
+  transition: border 0.2s;
+}
+
+.form-group input:focus {
+  border-color: #a084ca;
+  outline: none;
+  background: #f8fafc;
+}
+
+button[type="submit"] {
+  background: linear-gradient(90deg, #a084ca 0%, #f3e8ff 100%);
+  color: #fff;
+  border: none;
+  padding: 12px 0;
+  border-radius: 6px;
+  font-size: 1.08rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(160, 132, 202, 0.08);
+}
+
+button[type="submit"]:hover {
+  background: linear-gradient(90deg, #f3e8ff 0%, #a084ca 100%);
+  color: #a084ca;
+}
+
+.error {
+  color: #ed4956;
+  margin-top: 4px;
+  font-size: 0.98rem;
+  background: #ffeaea;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.transactions-container {
+  margin-left: 200px; /* Adjust to match your sidebar width */
+  padding: 20px;
+}

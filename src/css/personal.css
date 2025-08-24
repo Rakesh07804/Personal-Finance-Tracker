@@ -1,0 +1,122 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(160, 132, 202, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.modal {
+  background: #fff8f0;
+  padding: 32px 28px;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(160, 160, 160, 0.18);
+  min-width: 320px;
+  max-width: 90vw;
+}
+.modal-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+.modal-buttons button {
+  margin-right: 0; /* Remove extra margin */
+}
+
+.modal-buttons button[type="submit"],
+.cancel-btn {
+  background: linear-gradient(90deg, #a084ca 0%, #f3e8ff 100%);
+  color: #fff;
+  border: 1px solid #a084ca;
+  width: 90px;
+  padding: 7px 0;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  text-align: center;
+  display: inline-block;
+}
+.modal-buttons button[type="submit"]:hover {
+  background: linear-gradient(90deg, #f3e8ff 0%, #a084ca 100%);
+  color: #a084ca;
+  border-color: #a084ca;
+}
+.cancel-btn {
+  background: linear-gradient(90deg, #f3e8ff 0%, #a084ca 100%);
+  color: #a084ca;
+  border: 1px solid #a084ca;
+}
+.cancel-btn:hover {
+  background: #ed4956;
+  color: #fff;
+  border-color: #ed4956;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+.form-group label {
+  margin-bottom: 6px;
+  color: #7b7b7b;
+  font-weight: 500;
+}
+.summary-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(90deg, #f8fafc 0%, #e0c3fc 100%);
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(160, 132, 202, 0.08);
+  padding: 10px 0;      /* Reduced from 18px */
+  margin: 12px 0;       /* Reduced from 20px */
+}
+
+.summary-item {
+  text-align: center;
+  min-width: 70px;      /* Reduced from 100px */
+  margin: 0 6px;        /* Reduced from 10px */
+}
+
+.summary-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #6c4ab6;
+  margin-bottom: 4px;
+  letter-spacing: 0.5px;
+}
+
+.summary-amount {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 2px;
+  letter-spacing: 1px;
+}
+
+.summary-item.savings .summary-title,
+.summary-item.savings .summary-amount {
+  color: #3e7cb6;
+}
+
+.summary-item.overbudget .summary-title,
+.summary-item.overbudget .summary-amount {
+  color: #ed4956;
+}
+
+.summary-item .summary-title,
+.summary-item .summary-amount {
+  background: none;
+  padding: 0;
+  border-radius: 0;
+}
+
+.reports-container button {
+  min-width: 110px;
+}
